@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: S3 template
+
+Parameters:
+  BucketName:
+    Description: add meg a bucket nevét
+    Type: String
+    MinLength: 1
+    MaxLength: 60
+    ConstraintDescription: a bucket 1-60 karakter kell hogy legyen!
+  BucketRegion:
+    Description: a bucket régioja
+    Type: String
+    Default: eu-north-1
+    AllowedValues:
+      - eu-north-1
+      - eu-central-1
+    ConstraintDescription: válassz jobb régiot! (eu-north-1 vagy eu-central-1)
+
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Ref BucketName
+      AccessControl: Private
+
+Outputs:
+  S3BucketName:
+    Description: a bucketed neve
+    Value: !Ref BucketName
+  S3BucketRegion:
+    Description: a bucketed régioja
+    Value: !Ref BucketRegion
