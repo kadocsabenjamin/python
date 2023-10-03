@@ -1,0 +1,64 @@
+0. feladat
+- Egyéni feladat.
+- Tilos a chatgpt és egyéb AI használata.
+- Ne importálj be SEMMIT.
+- A megoldást küld el 1db email-ben az összes megoldást úgy hogy szünetet rakj a megoldások közé kb. 5-10db entert és egy "# 1. feladat"-ot írj elé hogy egyértelmű legyen.
+- nem baj ha nem tökéletes egy megoldás, próbálkozást is rakj bele, de max 1 megoldás egy feladathoz, azt rakd be ami a "legjobb"
+- email: benjamin.kadocsa@webvalto.hu tárgy "python <neved>"
+
+1. feladat
+Rajzolj ki egy "ládát" a console-ra 
+a "láda" mérete n*n, 5 <= n <= 20
+n-et kérd be.
+
+Hibás bemenetet kezeld le.
+
+Példa kimenet:
+n = 8
++------+
+|\     |
+| \    |
+|  \   |
+|   \  |
+|    \ |
+|     \|
++------+
+
+2.feladat
+Írj egy programot ami console-ról bekér egy IP címet és megmondja hogy jó-e a formátuma
+A bemenet string formátumu, hisz van benne pont
+
+pl:
+192.168.1.1 -> jó
+192.168.01.1 -> nem jó mert a 01 az 1-nek kéne lennie
+261.0.121.1 -> nem jó mert 255nél nem lehet nagyobb
+
+
+3. feladat:
+Adott egy tér ami 20x20 karakter széles,bemenetről kérj be 3db téglalap adatot: kezdőpont(x,y) és méret(a,b).
+
+Rajzold ki a téglalapokat a console-ra úgy hogyha átfedés van akkor akésőbb megadott téglalap takarja ki a korábbiakat.
+
+
+Példa kimenet:
+*téglalap adatai(az 1.példában): kezdőpont(2,0) méret(5,4)
++téglalap adatai(az 1.példában): kezdőpont(4,3) méret(5,3)
+-téglalap adatai(az 1.példában): kezdőpont(6,2) méret(2,3)
+  
+ 0123456789------------------------------------------------
+0  *****	 	----			++++++
+1  *****	 	----			++++****
+2  ****--		+---		  	    ****
+3  **++--+		+++  ***	    	****
+4    ++--+		+++  ***	  	  ----**
+5    +++++		+++  ***	  	  ----**
+--1.példa----------------2.példa----------------3.példa----
+
+
+4. feladat
+
+A kapitány abban az évben született, amely 2016-hoz alulról a legközelebbi olyan szám, melynek osztói száma 8, és van benne 7-es számjegy. Hány éves a kapitány?
+
+5. feladat
+
+Ikerprímeknek nevezzük azokat a prímszám együtteseket, amelyeknél n és n+2 is prím. Az első 3 ilyen pár (3, 5), (5, 7) és (11, 13). Melyik a 60-adik?
